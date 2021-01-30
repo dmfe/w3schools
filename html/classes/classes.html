@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Classes</title>
+    </head>
+    <body>
+
+        <div class="city">
+            <h2>London</h2>
+            <p>London is the capital of England.</p>
+        </div>
+
+        <div class="city">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <h1>My <span class="note">Important</span> Heading</h1>
+        <p>This is some <span class="note">important</span> text.</p>
+
+        <button onclick="hideCities()">Hide all cities!</button>
+        <button onclick="showCities()">Show all cities!</button>
+
+        <script charset="utf-8">
+            function hideCities() {
+                var citiesElements = document.getElementsByClassName("city");
+                for (var i = 0; i < citiesElements.length; i++) {
+                    citiesElements[i].style.display = "none";
+                }
+            }
+            function showCities() {
+                var citiesElements = document.getElementsByClassName("city");
+                for (var i = 0; i < citiesElements.length; i++) {
+                    citiesElements[i].style.display = "inherit";
+                }
+            }
+        </script>
+    </body>
+</html>
