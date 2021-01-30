@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Id</title>
+        <style type="text/css" media="screen">
+            #myHeader {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 id="myHeader">My Header</h1>
+
+        <p><a href="html_demo.html#C4" target="_blank">Jump to chapter 4</a></p>
+
+        <button onclick="displayResult()">Have a good day</button>
+        <script charset="utf-8">
+            function displayResult() {
+                document.getElementById("myHeader").innerHTML = "Have A Good Day!!!";
+            }
+        </script>
+    </body>
+</html>
