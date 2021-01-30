@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>images</title>
+        <style>
+            div {
+                background-image: url('img_girl.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>This is a paragraph inside div element.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <img src="pic_trulli.jpg" alt="Itallian Trulli">
+        <img src="img_girl.jpg" alt="Girl in a jacker" style="width:500px; height:600px;">
+        <img src="img_chania.jpg" alt="Flowers in Chania">
+
+        <p><img src="smiley.gif" alt="Smiley face" style="float:right; width:42px; height:42px;">
+            The image will float to the right of the text.
+        </p>
+        <p><img src="smiley.gif" alt="Smiley face" style="float:left; width:42px; height:42px;">
+            The image will float to the left of the text.
+        </p>
+
+        <h1 style="font-size:300%">Image Maps</h1>
+
+        <img src="workplace.jpg" alt="Workplace" usemap="#workplace">
+
+        <map name="workplace">
+            <area shape="rect" coords="34,46,272,346" alt="Computer" href="computer.htm">
+            <area shape="rect" coords="290,174,335,247" alt="Phone" href="phone.htm">
+            <area shape="circle" coords="338,300,45" alt="coffee" href="coffee.htm">
+        </map>
+
+        <img src="delight.jpg" alt="Picture with some delights." usemap="#delight">
+
+        <map name="delight">
+            <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,
+            85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+            <area shape="circle" coords="357,366,47" onclick="myCircleFunction()">
+        </map>
+
+        <script>
+            function myCircleFunction() {
+                alert("You clicked on balls!");
+            }
+        </script>
+    </body>
+</html>
+
