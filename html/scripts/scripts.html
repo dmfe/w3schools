@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Scripts</title>
+    </head>
+    <body>
+
+        <h2>Use JavaScript to Change Text</h2>
+        <p>This example writes "Hello JavaScript!" into an HTML element
+        with id="demo":</p>
+
+        <p id="demo"></p>
+
+        <button onclick="sayHello()">Say Hello</button><br>
+        <button onclick="changeStyle()">Change Style</button><br>
+
+        <h1>Trun On The Light by Using JavaScript!</h1>
+
+        <p>Here, a JavaScript changes the value of the src(source) attribure of an image.</p>
+
+        <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+        <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+        </p>
+
+        <script charset="utf-8">
+            function sayHello() {
+                document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            }
+            function changeStyle() {
+                var demoElement = document.getElementById("demo");
+                demoElement.style.fontSize = "25px";
+                demoElement.style.color = "red";
+                demoElement.style.backgroundColor = "yellow";
+            }
+
+            function light(sw) {
+                var pic;
+                if (sw == 0) {
+                    pic = "pic_bulboff.gif"
+                } else {
+                    pic = "pic_bulbon.gif"
+                }
+                document.getElementById("myImage").src = pic;
+            }
+        </script>
+        <noscript>Sorrry, your browser does not support JavaScript!</noscript>
+    </body>
+</html>
